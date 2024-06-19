@@ -55,7 +55,7 @@ public class Enemy : MonoBehaviour
         // 如果碰到帶有Bullet標籤的物件，就要扣血，並且更新血條狀態
         if (collision.gameObject.tag == "Bullet")
         {
-            lifeAmount -= 1.0f;
+            lifeAmount -=  1.0f;
             //Debug.Log(lifeAmount / maxLife);
             lifeBarImage.fillAmount = lifeAmount / maxLife;
         }
